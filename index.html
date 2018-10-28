@@ -1,0 +1,95 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+	<title> Assignment 9 </title>
+<br>
+<br>
+	<h1>HAPPY HALLOWEEN</h1>
+
+	<br>
+	<br>
+
+
+<h2>Art of Clowns, Killers, Myths & Evil Dolls</h2>
+
+
+<br>
+
+<!--Nav Bar-->
+<ul>
+  <li><a href="templates/about.html">Scary Movies</a></li>
+  <li><a href="templates/work.html">Crazy Books</a></li>
+  <li><a href="templates/contact.html">Best Candy</a></li>
+</ul>
+
+
+<br>
+	<body>
+
+
+		<div id="test"></div>
+
+	<div class="work">
+
+<img src="images/thecryer.png" alt="myers" style="width:30%">
+<img src="images/stupidclown.png" alt="chucky" style="width:30%">
+<img src="images/strodes.png" alt="cry" style="width:30%">
+<img src="images/hatehim.png" alt="clown" style="width:30%">
+<img src="images/knife.png" alt="clown" style="width:30%">
+<img src="images/cry.jpg" alt="clown" style="width:30%">
+<img src="images/killer.png" alt="clown" style="width:30%">
+<img src="images/chuck.jpg" alt="clown" style="width:30%">
+<img src="images/henotwise.png" alt="clown" style="width:30%">
+<img src="images/healive.png" alt="clown" style="width:30%">
+<img src="images/doll.png" alt="clown" style="width:30%">
+<img src="images/cryer.jpg" alt="clown" style="width:30%">
+</div>
+
+		
+		
+		
+
+		<script type="text/javascript">
+
+			var color=0;
+			var alpha=0.0; 
+			var h1=0;
+
+			document.addEventListener("keypress", function(event){
+				console.log(event);
+
+				var key=event.key;
+
+				
+				if(key=='r'){
+					color=0;
+
+				}else if (key=='o') {
+					color=90;
+				}else if (key=='y'){
+					color=80;
+				}else if(key=='g'){
+					color=70;
+				}
+				
+				
+				
+				var divs= document.getElementsByTagName("div");
+				
+				for(var i=0; i<divs.length;i++){
+					divs[i].style.background='hsl('+color+',100%,50%)';
+					color+=9;
+
+				}
+
+				// color+= 30;
+			});
+			</script>
+
+		</body>
+		</head>
